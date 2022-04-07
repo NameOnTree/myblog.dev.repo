@@ -1,0 +1,10 @@
+baseURL = "http://nameontree.github.io"
+languageCode = "en-us"
+title = "Myungjae Cho"
+theme = "hugo-theme-cleanwhite"
+
+[params]
+  title = "Sprinkle stars"
+  slogan = "gg"
+  SEOTitle = "Myungjae Cho Blog"
+  keyword = "Computer"
