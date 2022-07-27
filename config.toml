@@ -1,7 +1,7 @@
 baseURL = "http://nameontree.github.io"
 languageCode = "en-us"
 title = "Myungjae Cho"
-theme = "hugo-theme-cleanwhite"
+theme = "hugo-PaperMod"
 
 [params]
   title = "Sprinkle stars"
