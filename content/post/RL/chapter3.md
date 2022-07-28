@@ -3,7 +3,6 @@ title: "Chapter 3: Finite Markov Decision Processes"
 #description: <descriptive text here>
 date: 2022-05-16T13:03:22-04:00
 draft: true
-math: true
 toc: false
 image: ""
 tags: ["RL"]
