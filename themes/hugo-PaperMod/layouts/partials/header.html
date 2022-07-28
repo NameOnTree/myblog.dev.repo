@@ -1,3 +1,4 @@
+{{ if .Params.mathjax }}{{ partial "mathjax_support.html" . }}{{ end }}
 {{- /* theme-toggle is enabled */}}
 {{- if (not site.Params.disableThemeToggle) }}
 {{- /* theme is light */}}
