@@ -52,3 +52,14 @@ $$ = \delta_t + \gamma \delta_{t+1} + \gamma^2(G_{t+2} - V(S_{t+2}))$$
 $$ = \delta_t + \gamma \delta_{t+1} + \gamma^2 \delta_{t+2} + ... + \gamma^{T-t-1} \delta_{T-1} + \gamma^{T-t}(G_T - V(S_{T}))$$
 $$ = \delta_t + \gamma \delta_{t+1} + \gamma^2 \delta_{t+2} + ... + \gamma^{T-t-1} \delta_{T-1} + \gamma^{T-t}(0 - 0)$$
 $$ = \sum_{k=t}^{T-1} \gamma^{k-t}\delta_t \tag{6.6}$$
+
+## 6.2 Advantages of TD Prediction Methods
+
+1. Does not require a model unlike DP methods do
+2. Can learn immediately after one time step (TD(0)). Does not need to wait for the full return unlike MC methods must do. Can be also used for continuous tasks.
+3. some Monte Carlo methods must discard episodes on which experimental actions are taken. This slows down the learning processes. DP methods do not have these restrictions.
+
+TD methods are guaranteed to converge to $v_{\pi}$ for any fixed policy ${\pi}$
+There's still debate on which method has a faster learning speed, but in practice, TD methods converge faster than MC methods.
+
+## 6.3 Optimality

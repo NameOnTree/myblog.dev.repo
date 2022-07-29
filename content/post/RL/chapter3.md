@@ -120,3 +120,38 @@ $$G_t = \sum_{k=t+1}^T \gamma^{k-t-1}R_k \tag{3.11}$$
 
 including the possiblity that $T = \infty$ or $\gamma = 1$ (but not both).
 
+## 3.5 Policies and Value Functions
+
+Many reinforcement learning algorithms seek to estimate value functions. ***Value function*** represents how good a given state is for the agents.
+
+### Policy and Value Functions
+
+***policy*** is a mapping from states to probabilities of selecting each possible action. Mathmatically, for given policy $\pi$ at time $t$, the mapping is described as $\pi(a|s)$.
+
+***state-value function*** of a state $s$ under a policy $\pi$, $v_{\pi}(s)$, is defined as
+
+$$v_{\pi}(s) = \mathbb E_{\pi}[G_t | S_t = s] = \mathbb E_{\pi}[\sum_{k=0}^{\infty} \gamma^k R_{t+k+1} | S_t = s] \tag{3.12}$$
+
+for all $s \in \mathbb S$, where $\mathbb E_{\pi}[\cdot]$ is an expectation of a random variable given that the agent follows policy $\pi$, and $t$ is any time step.
+
+Similarly, ***action-value function*** of a state and an action at time $t$ under a policy $\pi$, $q_{\pi}(s,a)$, is defined as
+
+$$q_{\pi}(s,a) = \mathbb E_{\pi}[G_t | S_t = s, A_t = a] = \mathbb E_{\pi}[\sum_{k=0}^{\infty} \gamma^k R_{t+k+1} | S_t = s, A_t = a] \tag{3.13}$$
+
+### Bellman equation
+
+A nice thing about these value functions is that they are recursive, meaning that the value function can be represented as the value function itself.
+
+For any policy $\pi$ and any state $s$, the following equation holds between the value of $s$ and the value of its possible successor states:
+
+$$v_{\pi} = \mathbb E_{\pi}[G_t | S_t = s]$$
+$$ = \mathbb E_{\pi}[R_{t+1} + \gamma G_{t+1} | S_t = s]$$
+$$ = \sum_a \pi(a|s) \sum_{s',r} p(s',r|s,a)[r + \gamma \mathbb E_{\pi}[G_{t+1}|S_{t+1}=s']]$$
+$$ = \sum_a \pi(a|s) \sum_{s',r} p(s',r|s,a)[r + \gamma v_{\pi}(s')] \tag{3.14}$$
+
+for all $s \in \mathbb S$. Actions, a, are taken from the set $\mathbb A(s)$ and the next states, $s'$ are taken from the set $\mathbb S$, and rewards, $r$, are taken from the set $\mathbb R$
+
+the equation 3.14 is called ***Bellman equation***
+
+
+
