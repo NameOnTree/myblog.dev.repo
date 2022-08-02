@@ -62,4 +62,13 @@ $$ = \sum_{k=t}^{T-1} \gamma^{k-t}\delta_t \tag{6.6}$$
 TD methods are guaranteed to converge to $v_{\pi}$ for any fixed policy ${\pi}$
 There's still debate on which method has a faster learning speed, but in practice, TD methods converge faster than MC methods.
 
-## 6.3 Optimality
+## 6.3 Optimality of TD(0)
+
+While MC methods and TD methods are both guaranteed to converge to $v_{\pi}$ for an infinite amount of sample, usually TD methods give more resonable estimate of the values than MC methods give under a condition of limited experience.
+
+Batch MC methods always try to minimize mean-squared error of $G_t$ on the training set, but in this way MC methods fails to predict well on the unseen data. On the other hand, batch TD methods minimizes the error so that it can better fit into the ***maximum likelihood estimate model*** of the Markov process. 
+
+Given this model, we can correctly calculate the value if the model is correct. This is called the ***certainty-equivalence estimate*** because it is equivalent to assuming that the estimate of the underlying process was known with certainty rather than being approximated. 
+
+In general, batch TD(0) converges to the certainty-equivalence estimate.
+
