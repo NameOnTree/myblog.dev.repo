@@ -151,7 +151,19 @@ $$ = \sum_a \pi(a|s) \sum_{s',r} p(s',r|s,a)[r + \gamma v_{\pi}(s')] \tag{3.14}$
 
 for all $s \in \mathbb S$. Actions, a, are taken from the set $\mathbb A(s)$ and the next states, $s'$ are taken from the set $\mathbb S$, and rewards, $r$, are taken from the set $\mathbb R$
 
-the equation 3.14 is called ***Bellman equation***
+The equation 3.14 is ***Bellman equation*** for $v_{\pi}$. 
+Basically, Bellman equation is a recursive definition of the expected discounted return, $v_{\pi}$. This means $v_{\pi}(s)$ can be represented as the expression of $v_{\pi}(s')$, which makes the value of current state easier to understand in terms of the value of previous state. It states $v_{\pi}(s)$ is the average of $r + \gamma v_{\pi}(s')$ of the future states, weighted by the possibilities of $\pi(a|s)$ and $p(s',r|s,a)$.
 
+Note that this recursive definition of Bellman equation enables us to build a backup diagram of tree-like structure, and is a convenient method to visualize the overall picture.
 
+## 3.6 Optimal Policies and Optimal Value Functions
 
+Choosing a policy that always maximizes the value gives us an optimal value functions.
+$v_{\star}(s) = \max_{\pi} v_{pi}(s)\tag{3.15}$
+this can be also written as action-value function
+$q_{\star}(s, a) = \max_{\pi} q_{pi}(s, a)\tag{3.16}$
+
+decomposing the function gives 
+$q_{\star}(s, a) = \mathbb E[R_{t+1} + \gamma v_{\star}(S_{t+1}) | S_t = s, A_t = a]\tag{3.17}$
+
+### continued...
