@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://nameontree.github.io/categories/</loc>
+    <lastmod>2022-05-16T13:03:22-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://nameontree.github.io/post/rl/chapter3/</loc>
+    <lastmod>2022-05-16T13:03:22-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://nameontree.github.io/</loc>
+    <lastmod>2022-05-16T13:03:22-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://nameontree.github.io/post/</loc>
+    <lastmod>2022-05-16T13:03:22-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://nameontree.github.io/tags/rl/</loc>
+    <lastmod>2022-05-16T13:03:22-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://nameontree.github.io/categories/rl/</loc>
+    <lastmod>2022-05-16T13:03:22-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://nameontree.github.io/tags/</loc>
+    <lastmod>2022-05-16T13:03:22-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://nameontree.github.io/post/android/cameramotiontracker/</loc>
+    <lastmod>2022-04-16T19:09:09-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://nameontree.github.io/tags/android/</loc>
+    <lastmod>2022-04-16T19:09:09-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://nameontree.github.io/categories/android/</loc>
+    <lastmod>2022-04-16T19:09:09-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://nameontree.github.io/tags/development/</loc>
+    <lastmod>2022-04-16T19:09:09-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://nameontree.github.io/tags/tensorflow/</loc>
+    <lastmod>2022-04-16T19:09:09-04:00</lastmod>
+  </url>
+  
+</urlset>
