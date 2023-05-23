@@ -1,8 +1,8 @@
 ---
-title: "Chapter 3: Finite Markov Decision Processes"
+title: "Introduction to Reinforcement Learning: Chapter 3"
 #description: <descriptive text here>
 date: 2022-05-16T13:03:22-04:00
-draft: true
+draft: false
 toc: false
 image: ""
 tags: ["RL"]
@@ -11,9 +11,9 @@ mathjax: true
 ---
 
 # Credits
-All contents of this post are referenced from ***"Reinforcement Learning, An Introduction second edition" by Richard Sutton and Andrew Barto***
+All contents are summaries of ***"Reinforcement Learning, An Introduction second edition" by Richard Sutton and Andrew Barto***
 
-# Chapter 3: Finite Markov Decision Processes
+## Chapter 3: Finite Markov Decision Processes
 
 ## 3.0 Introduction
 - Markov Decision Processes is mathematically idealized form of reinforcement learning
@@ -159,11 +159,9 @@ Note that this recursive definition of Bellman equation enables us to build a ba
 ## 3.6 Optimal Policies and Optimal Value Functions
 
 Choosing a policy that always maximizes the value gives us an optimal value functions.
-$v_{\star}(s) = \max_{\pi} v_{pi}(s)\tag{3.15}$
+$v_{\star}(s) = \max_{\pi} v_{\pi}(s)\tag{3.15}$
 this can be also written as action-value function
-$q_{\star}(s, a) = \max_{\pi} q_{pi}(s, a)\tag{3.16}$
+$q_{\star}(s, a) = \max_{\pi} q_{\pi}(s, a)\tag{3.16}$
 
 decomposing the function gives 
 $q_{\star}(s, a) = \mathbb E[R_{t+1} + \gamma v_{\star}(S_{t+1}) | S_t = s, A_t = a]\tag{3.17}$
-
-### continued...

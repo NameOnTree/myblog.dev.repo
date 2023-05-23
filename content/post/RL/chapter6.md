@@ -1,5 +1,5 @@
 ---
-title: "Chapter6"
+title: "Introduction to Reinforcement Learning: Chapter 6"
 date: 2022-07-28T04:38:34-04:00
 draft: true
 toc: false
@@ -10,7 +10,7 @@ mathjax: true
 ---
 
 # Credits
-All contents of this post are referenced from ***"Reinforcement Learning, An Introduction second edition" by Richard Sutton and Andrew Barto***
+All contents are summaries of ***"Reinforcement Learning, An Introduction second edition" by Richard Sutton and Andrew Barto***
 
 # Chapter 6: Temporal-Difference Learning
 
